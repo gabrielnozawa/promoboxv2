@@ -1,0 +1,8 @@
+# Instale este arquivo SOMENTE se for usar AI_PROVIDER=anthropic em app/ai/generator.py.
+# Mantido separado do requirements.txt principal para deixar a instalação padrão
+# (modo template, sem IA externa) mais leve e rápida — isso também reduz o risco
+# de o build do Streamlit Cloud travar/demorar na resolução de dependências.
+#
+# Uso: pip install -r requirements-ai.txt
+
+anthropic>=0.34,<1.0
